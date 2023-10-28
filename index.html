@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Alex Only</title>
+    <script>
+  
+
+        function coding()   {
+
+        var name = document.getElementById("name()").value;
+        var result = document.getElementById("outputValue");
+
+        switch (name){
+            
+            case "Alex":
+                result.innerHTML = '<a align="center" href= "confession.html" targer=_blank>Hi Alex!</a>' ;
+               break;
+          
+            default:
+                result.innerHTML = "You're not Alex";
+                break;
+
+
+        }
+        }
+    </script>
+</head>
+<body>
+
+    <div>
+    <label  for= "name()" style="font-size:20px">Enter your name: </label>
+        <input type="text" id="name()"/>
+        <br>
+        <button onclick="coding()" style="font-size: 20px; background-color:lightblue; border-radius: 10px;">Submit</button>
+        <p id="outputValue"></p>
+
+    </div>
+</body>
+</html>
